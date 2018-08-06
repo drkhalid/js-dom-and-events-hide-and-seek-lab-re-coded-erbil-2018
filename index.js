@@ -19,18 +19,22 @@ function increaseRankBy(n) {
 
 
 function deepestChild(){
+  var nodes = document.querySelectorAll('#grand-node div');
+var mostDeep = nodes[nodes.length- 1];
+
+return mostDeep
   
 }
 
-function deepestChild() {
-  let node = document.getElementById('grand-node')
-  let nextNode = node.children[0]
+// function deepestChild() {
+//   let node = document.getElementById('grand-node')
+//   let nextNode = node.children[0]
 
-  while (nextNode) {
-    node = nextNode
-    nextNode = node.children[0]
-  }
+//   while (nextNode) {
+//     node = nextNode
+//     nextNode = node.children[0]
+//   }
 
-  return node
-}
+//   return node
+// }
 
